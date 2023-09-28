@@ -52,7 +52,7 @@ fun Dialogbox(
                     TextField(
                         value = minPrice.toString(),
                         onValueChange = { minPrice = it.toIntOrNull() ?: 0 },
-                        singleLine = true,
+                        singleLine = false,
                         label = { Text("Minimum Price") },
                         colors = TextFieldDefaults.textFieldColors(placeholderColor = Color.Black)
                     )

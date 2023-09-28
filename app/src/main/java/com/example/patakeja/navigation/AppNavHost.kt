@@ -31,6 +31,19 @@ fun AppNavHost(
         composable(ROUTE_SPLASHSCREEN) {
             SplashScreen(navController)
         }
+        composable(route = BottomBar.Home.route)
+        {
+            HomeScreen(navController)
+        }
+        composable(route = BottomBar.Save.route)
+        {
+            SaveScreen(navController)
+        }
+        composable(route = BottomBar.Account.route)
+        {
+            SignUpScreen(navController)
+        }
+
         composable(ROUTE_HOME){
             HomeScreen(navController)
         }
@@ -41,7 +54,7 @@ fun AppNavHost(
             BuyScreen(navController)
         }
         composable(ROUTE_SAVE) {
-            SaveScreen(propertyListings)
+            SaveScreen(navController)
         }
         composable(ROUTE_MY_ACCOUNT) {
             SignUpScreen(navController)

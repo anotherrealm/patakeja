@@ -36,6 +36,7 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.example.patakeja.data.AuthRepository
+import com.example.patakeja.navigation.ROUTE_ADD_PROPERTY
 import com.example.patakeja.navigation.ROUTE_HOME
 import com.example.patakeja.ui.theme.PataKejaTheme
 
@@ -88,7 +89,7 @@ fun LoginScreen(navController: NavHostController){
             onClick = {
                 var authRepository = AuthRepository(navController, context)
                 authRepository.login(email.text.trim(), password.text.trim())
-                navController.navigate(ROUTE_HOME)
+                navController.navigate(ROUTE_ADD_PROPERTY)
                       },
             colors = ButtonDefaults.buttonColors(Color.White),
             shape = RoundedCornerShape(20.dp),

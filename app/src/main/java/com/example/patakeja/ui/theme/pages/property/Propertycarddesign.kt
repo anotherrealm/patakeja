@@ -10,6 +10,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.material.Button
 import androidx.compose.material.Card
 import androidx.compose.material.Icon
 import androidx.compose.material.MaterialTheme
@@ -158,16 +159,20 @@ fun PropertyListingCard(
                     Image(
                         painter = painterResource(id = R.drawable.call),
                         contentDescription = "Call Agent",
-                        modifier = Modifier.size(24.dp).clickable {
-                            onCallClick()
-                        }
+                        modifier = Modifier
+                            .size(24.dp)
+                            .clickable {
+                                onCallClick()
+                            }
                     )
                     Image(
                         painter = painterResource(id = R.drawable.mail),
                         contentDescription = "Email Agent",
-                        modifier = Modifier.size(24.dp).clickable {
-                            onEmailClick()
-                        }
+                        modifier = Modifier
+                            .size(24.dp)
+                            .clickable {
+                                onEmailClick()
+                            }
                     )
                     Text(
                         text = propertyListing.agentName,

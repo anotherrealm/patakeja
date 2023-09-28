@@ -58,6 +58,7 @@ fun AddPropertyScreen(
 
     LocalDensity.current.density
 
+
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -175,8 +176,8 @@ fun AddPropertyScreen(
                         agentName = "Agent Name",
                         agentPhoneNumber = "Agent Phone",
                         agentEmail = "Agent Email",
-                        callIcon = 0, // Replace with actual icons
-                        emailIcon = 0, // Replace with actual icons
+                        callIcon = R.drawable.call,
+                        emailIcon = R.drawable.mail,
                         isSaved = false,
                         bedIconResId = R.drawable.bed,
                         bathIconResId = R.drawable.bath,

@@ -27,12 +27,12 @@ fun PropertyListingScreen(
                 onSaveClick = {},
                 onCallClick = {
                     // Handle calling the agent here
-                    val intent = Intent(Intent.ACTION_CALL, Uri.parse("tel:${propertyListing.agentPhoneNumber}"))
+                    Intent(Intent.ACTION_CALL, Uri.parse("tel:${propertyListing.agentPhoneNumber}"))
                     // Check for permissions and start the call intent
                 },
                 onEmailClick = {
 
-                    val emailIntent = Intent(Intent.ACTION_SENDTO, Uri.fromParts("mailto", propertyListing.agentEmail, null))
+                    Intent(Intent.ACTION_SENDTO, Uri.fromParts("mailto", propertyListing.agentEmail, null))
 
                 }
             )

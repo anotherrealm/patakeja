@@ -10,6 +10,7 @@ import android.app.ProgressDialog
 import android.content.Context
 import android.widget.Toast
 import androidx.navigation.NavHostController
+import com.example.patakeja.navigation.ROUTE_ADD_PROPERTY
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
 
@@ -56,7 +57,7 @@ class AuthRepository(var navController: NavHostController, var context: Context)
             progress.dismiss()
             if(it.isSuccessful){
                 Toast.makeText(context,"Login successful", Toast.LENGTH_SHORT).show()
-                navController.navigate(ROUTE_HOME)
+                navController.navigate(ROUTE_ADD_PROPERTY)
             }
             else{
                 navController.navigate(ROUTE_LOGIN)
