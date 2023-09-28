@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "247858388827",
+    "project_id": "patakeja-c2065",
+    "storage_bucket": "patakeja-c2065.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:247858388827:android:ffeacc6ca83cb95559447e",
+        "android_client_info": {
+          "package_name": "com.example.patakeja"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "247858388827-61d77ujah6o8bi803n7k6aq2n5dqlns1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7l3auPGBtA7QyJxVyj5NVBoR9KRz_62o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "247858388827-61d77ujah6o8bi803n7k6aq2n5dqlns1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
